@@ -115,14 +115,14 @@ document.addEventListener("DOMContentLoaded", function () {
 (function () {
     emailjs.init({
         // Replace with your EmailJS user ID
-        publicKey: process.env.PUBLIC_KEY,
+        publicKey: "NvyZhggFWF0AdIs3h",
     }); 
 })();
 
 document.getElementById("myForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, this)
+    emailjs.sendForm("service_n3vryrr", "template_qgsnn6n", this)
         .then(() => {
             alert("Message Sent Successfully!");
             document.getElementById("myForm").reset();
