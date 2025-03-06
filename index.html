@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css"> -->
+    <!-- <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet"> -->
+    <!-- Tiny Slider CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@iconify/iconify@2.1.0/dist/iconify.min.js" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>welcome to my portfolio - Dharmander yadav</title>
+</head>
+
+<body>
+
+    <header
+        class="bg-black md:flex top-0 z-1 left-0 right-0 w-full md:fixed justify-between px-3 md:px-10 md:py-5 py-4 items-center text-white">
+        <div class="text-align text-center  flex justify-between items-center">
+            <img src="img/logo.png" class="w-44 " alt="Dharmander">
+
+            <div id="ham" class="mr-1">
+                <div class="menu  md:hidden" onClick="showList()"><i class="fas fa-bars text-3xl"></i></div>
+                <div class="menu hidden md:hidden" onClick="hideList()"><i class="fas fa-times text-3xl"></i> </div>
+            </div>
+
+        </div>
+        <nav>
+            <ul id="menu-list"
+                class="text-center  text-xl hidden mt-2 md:mt-0 md:flex justify-center gap-6 lg:text-2xl capitalize cursor-pointer ">
+                <a href="/">
+                    <li class="text-amber-500 font-bold">Home</li>
+                </a>
+                <a href="#about">
+                    <li class="hover:text-amber-500 font-bold">About</li>
+                </a>
+                <a href="#project">
+                    <li class="hover:text-amber-500 font-bold">projects</li>
+                </a>
+                <a href="#blog">
+                    <li class="hover:text-amber-500 font-bold">Blogs</li>
+                </a>
+                <a href="#contact">
+                    <li class="hover:text-amber-500 font-bold">Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="relative pt-6 pb-5 personal-wrapper overflow-hidden dark active" id="home">
+        <div class="absolute inset-0" id="overlay"></div>
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2  grid-cols-1 items-center gap-[30px] items-center ">
+                <div class="relative">
+                    <h4 class="font-bold lg:text-[40px] text-white text-2xl lg:leading-normal leading-normal mb-4">
+                        Hey! I'm <br>
+                        <span class="typewrite text-4xl md:text-6xl text-amber-500" data-period="2000"
+                            data-type='["Dharmander Yadav", "Web Developer", "Tech Enthusiast", "Passionate Coder", "Problem Solver","Full-Stack Developer", "Tech Explorer","Quick Learner"]'>
+                            <span class="wrap"></span>
+                        </span>
+                    </h4>
+                    <p class="text-slate-400 max-w-xl">
+                        Aspiring Web Developer with a passion for building modern, user-friendly experiences.
+                    </p>
+
+                    <div class="mt-6 z-4">
+                        <a href="#contact"
+                            class="btn mt-3 bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md cursor-pointer">Hire
+                            Me</a>
+                        <a href="resume/dharmander-resume.pdf" download="dharmander-resume.pdf"
+                            class="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md ms-1 ml-3 mt-3 cursor-pointer "
+                            oClick="downloadCV()">Download
+                            CV</a>
+                    </div>
+
+
+                </div>
+
+                <div class="relative">
+                    <img src="img/1.png" class="md:w-[69%] " alt="">
+
+                    <div
+                        class="absolute lg:bottom-20 md:bottom-10 bottom-2 ltr:md:-left-5 ltr:left-2 rtl:md:-right-5 rtl:right-2 p-4 rounded-lg shadow-md shadow-gray-800 dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center bg-dark-2">
+                        <span class="text-3xl font-medium mb-0"><span class="counter-value font-bold"
+                                data-target="125">10</span>+</span>
+                        <h6 class="text-sm text-slate-400 mt-1">Project Completed</h6>
+                    </div>
+
+                    <!-- lg:top-80 md:top-56 top-48  -->
+                    <div
+                        class="absolute lg:top-[47%] md:top-10 top-20 ltr:md:right-16 ltr:right-11 rtl:md:-left-10 rtl:left-20 p-4 rounded-lg shadow-md shadow-gray-800 dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center bg-dark-2">
+                        <h6 class="font-semibold">Web Designer</h6>
+                        <h6 class="text-sm text-slate-400 mt-1">3+ Years Experience</h6>
+                    </div>
+                </div>
+            </div>
+        </div><!--end container-->
+    </section>
+
+
+    <!-- about  -->
+    <section class="relative md:py-24 py-16 bg-dark-2 " id="about">
+        <div class="container  items-center mx-auto">
+            <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+                <div class="lg:col-span-1 lg:px-8"></div>
+                <div class="lg:col-span-5 lg:px-8">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 border border-gray-8 rounded-full -mt-[10px] -ms-3 h-[100%] w-[100%] -z-1">
+                        </div>
+                        <img src="img/goals.gif" class="rounded-full shadow-md shadow-gray-800 border-gray-8" alt="">
+
+                        <div
+                            class="absolute lg:bottom-20 md:bottom-10 bottom-6 ltr:lg:-right-16 rtl:lg:-left-16 ltr:md:-right-8 rtl:md:-left-8 ltr:right-0 rtl:left-0 p-4 rounded-lg shadow-md shadow-gray-800  bg-dark-2 dark:bg-slate-900  m-3 w-44 text-center">
+                            <h6 class="font-semibold">Tech Enthusiast</h6>
+                            <span class="text-2xl font-medium text-amber-500 mb-0"><span class="counter-value font-bold"
+                                    data-target="7">Learning</span> </span>
+                            <span class="text-sm text-slate-400">& <br> Innovating</span>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="lg:col-span-6">
+                    <div class="lg:ms-5">
+                        <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Aspiring Web
+                            Developer | Tech Enthusiast</h3>
+
+                        <p class="text-slate-400 max-w-xl text-[15px]">Passionate MCA student and aspiring Web Developer
+                            with a keen interest in crafting dynamic and user-friendly digital experiences. </p>
+                        <p class="text-slate-400 max-w-xl text-[15px] mt-6">Proficient in front-end and back-end
+                            technologies, always eager to learn and innovate. Dedicated to building impactful web
+                            solutions with precision and creativity.</p>
+
+                        <div class="mt-6">
+                            <a href="#project"
+                                class="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md me-2 mt-2">See
+                                Work</a>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end grid-->
+        </div><!--end container-->
+
+        <!-- skills and passion  -->
+        <div class="container bg-child-dark-2 mx-auto md:mt-24 mt-16">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Skills &amp; Passion
+                </h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Aspiring Web Developer with a strong foundation
+                    in building dynamic and user-friendly web applications. Passionate about problem-solving, full-stack
+                    development, and continuously learning new technologies to enhance digital experiences.</p>
+            </div><!--end grid-->
+            <!-- grid-cols-1 -->
+            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2  mt-8 gap-[30px]">
+                <!-- html  -->
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-code h-5 w-5">
+                            <path d="M10 3L3 10l7 7M14 3l7 7-7 7" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">HTML5</h4>
+                    </div>
+                </div><!--end content-->
+
+                <!-- css  -->
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-layout h-5 w-5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">CSS3</h4>
+                    </div>
+                </div><!--end content-->
+
+                <!-- js  -->
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-zap h-5 w-5">
+                            <polygon points="13 2 3 14 12 14 10 22 20 10 11 10" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">JavaScript</h4>
+                    </div>
+                </div><!--end content-->
+
+                <!-- c c++ -->
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-terminal h-5 w-5">
+                            <polyline points="4 17 10 11 4 5" />
+                            <line x1="12" y1="19" x2="20" y2="19" />
+                        </svg>
+
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">C &amp; C++</h4>
+                    </div>
+                </div><!--end content-->
+
+                <!-- java  -->
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-coffee h-5 w-5">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                            <path d="M2 8h16v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                            <line x1="6" y1="1" x2="6" y2="4" />
+                            <line x1="10" y1="1" x2="10" y2="4" />
+                            <line x1="14" y1="1" x2="14" y2="4" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">JAVA</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-database h-5 w-5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                            <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">MYSQL</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-refresh-cw h-5 w-5">
+                            <polyline points="23 4 23 10 17 10" />
+                            <polyline points="1 20 1 14 7 14" />
+                            <path d="M3.51 9a9 9 0 1 1 .33 6" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Hibernate</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="md:flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900 hidden">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-target h-5 w-5 rotate-45">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Maven</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-pen-tool h-5 w-5 rotate-45">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                            <path d="M2 2l7.586 7.586"></path>
+                            <circle cx="11" cy="11" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">NextJs</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-book h-5 w-5 rotate-45">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Tailwind CSS</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-smartphone h-5 w-5 rotate-45">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Problem Solving</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-activity h-5 w-5 rotate-45">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">JSP &amp; Servlet</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-git-branch h-5 w-5">
+                            <line x1="6" y1="3" x2="6" y2="15" />
+                            <circle cx="6" cy="3" r="3" />
+                            <circle cx="6" cy="15" r="3" />
+                            <path d="M9 3h6a3 3 0 0 1 3 3v4" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Git &amp; GitHub</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-code h-5 w-5">
+                            <path d="M16 18L22 12L16 6" />
+                            <path d="M8 6L2 12L8 18" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Vs Code</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-cloud h-5 w-5">
+                            <path
+                                d="M17.5 17H6.5A4.5 4.5 0 0 1 3 12.5h0A4.5 4.5 0 0 1 6.5 8h.6A7 7 0 0 1 18 6.5a4.5 4.5 0 0 1 0 9h-1" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Netlify</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-triangle h-5 w-5">
+                            <polygon points="12 2 22 20 2 20" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Vercel</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-lightbulb h-5 w-5">
+                            <path d="M9 18h6" />
+                            <path d="M10 22h4" />
+                            <path d="M5 12a7 7 0 1 1 14 0c0 2-1 3-2 4l-1 1H8l-1-1c-1-1-2-2-2-4z" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Canva</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="md:flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900 hidden">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-box h-5 w-5">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73z" />
+                            <polyline points="3.29 7 12 12 20.71 7" />
+                            <line x1="12" y1="22" x2="12" y2="12" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">npm</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="md:flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900 hidden">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-git-commit h-5 w-5">
+                            <circle cx="12" cy="12" r="4" />
+                            <line x1="1.05" y1="12" x2="8" y2="12" />
+                            <line x1="16" y1="12" x2="22.95" y2="12" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">Yarn</h4>
+                    </div>
+                </div><!--end content-->
+
+                <div
+                    class="md:flex group shadow shadow-gray-200 dark:shadow-gray-800 dark:hover:shadow-gray-700 items-center p-3 rounded-lg bg-white dark:bg-slate-900 hidden ">
+                    <div
+                        class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-amber-500/10 group-hover:bg-amber-500 text-amber-500 group-hover:text-white text-center rounded-xl me-5 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-lightbulb h-5 w-5">
+                            <path d="M9 18h6" />
+                            <path d="M10 22h4" />
+                            <path d="M5 12a7 7 0 1 1 14 0c0 2-1 3-2 4l-1 1H8l-1-1c-1-1-2-2-2-4z" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="mb-0 text-[17px] font-medium">OOPs</h4>
+                    </div>
+                </div><!--end content-->
+
+            </div><!--end grid-->
+        </div><!--end container-->
+    </section>
+
+    <!-- services  -->
+    <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 bg-dark-3 text-white" id="service">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">What do i offer?
+                </h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto text-[15px]">I specialize in full-stack web development,
+                    crafting dynamic and user-friendly digital experiences. With a passion for problem-solving and a
+                    strong foundation in modern web technologies, I deliver scalable, efficient, and high-performing
+                    solutions.
+
+                </p>
+            </div><!--end grid-->
+
+            <div class="grid content-bg-1 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+                <!-- Content -->
+                <div
+                    class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-airplay h-10 w-10 stroke-1 text-amber-500">
+                        <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                        <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                    </svg>
+
+                    <div class="content mt-7">
+                        <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">UX / UI
+                            Implementation</a>
+                        <p class="text-slate-400 mt-3 text-[15px]">Transforming designs into clean, interactive, and
+                            user-friendly web experiences.</p>
+
+                        <div class="mt-5 hidden">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+
+                <!-- Content -->
+                <div
+                    class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-aperture h-10 w-10 stroke-1 text-amber-500">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                        <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                        <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                        <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                        <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                        <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                    </svg>
+
+                    <div class="content mt-7">
+                        <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Web Development</a>
+                        <p class="text-slate-400 mt-3 text-[15px]">Designing and developing modern, responsive, and
+                            high-performance websites.</p>
+
+                        <div class="mt-5 hidden">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+
+                <!-- Content -->
+                <div
+                    class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900 hidden lg:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-camera h-10 w-10 stroke-1 text-amber-500">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                        </path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+
+                    <div class="content mt-7">
+                        <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Full-Stack
+                            Development</a>
+                        <p class="text-slate-400 mt-3 text-[15px]">Building complete web applications with seamless
+                            frontend and backend integration.</p>
+
+                        <div class="mt-5 hidden">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+
+                <!-- Content -->
+                <div
+                    class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900 hidden lg:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-compass h-10 w-10 stroke-1 text-amber-500">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+
+                    <div class="content mt-7">
+                        <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">API Development &
+                            Integration</a>
+                        <p class="text-slate-400 mt-3 text-[15px]">Creating and integrating secure APIs for smooth data
+                            communication.</p>
+
+                        <div class="mt-5 hidden">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+
+                <!-- Content -->
+                <div
+                    class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900 hidden lg:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-settings h-10 w-10 stroke-1 text-amber-500">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                        </path>
+                    </svg>
+
+                    <div class="content mt-7">
+                        <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">Deployment &
+                            Hosting</a>
+                        <p class="text-slate-400 mt-3 text-[15px]">Deploying web applications for fast and reliable
+                            online presence.</p>
+
+                        <div class="mt-5 hidden">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+
+                <!-- Content -->
+                <div
+                    class="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-watch h-10 w-10 stroke-1 text-amber-500">
+                        <circle cx="12" cy="12" r="7"></circle>
+                        <polyline points="12 9 12 12 13.5 13.5"></polyline>
+                        <path
+                            d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83">
+                        </path>
+                    </svg>
+
+                    <div class="content mt-7">
+                        <a href="" class="title h5 text-[17px] font-medium hover:text-amber-500">24/7 Support &
+                            Assistance</a>
+                        <p class="text-slate-400 mt-3 text-[15px]">Providing reliable support, debugging, and technical
+                            assistance whenever needed.</p>
+
+                        <div class="mt-5 hidden">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+            </div>
+        </div><!--end container-->
+    </section>
+
+    <!-- Freelancer  -->
+    <section class="py-30 w-full table relative bg-[url('img/bg2.jpg')] bg-no-repeat bg-center bg-cover">
+        <div class="absolute inset-0 bg-slate-900/70"></div>
+        <div class="container mx-auto relative">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h3 class="mb-4 md:text-2xl text-xl text-white font-semibold">I Am Available For Freelancer Projects.
+                </h3>
+
+                <p class="text-white/80 max-w-xl mx-auto text-[15px]">💡I specialize in full-stack web development,
+                    creating responsive, high-performance, and scalable digital solutions. Whether it's a custom
+                    website, web application, API development, or UI/UX implementation, I bring technical expertise and
+                    creativity to every project.</p>
+
+                <div class="relative mt-8">
+                    <a href="#contact"
+                        class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md">Hire
+                        Me</a>
+                </div>
+            </div><!--end grid-->
+        </div><!--end container-->
+    </section>
+
+    <!-- Education -->
+    <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 bg-dark-3 text-white " id="experience">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Academic Journey
+                </h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto text-[15px]">I am constantly evolving as a developer, refining
+                    my skills through both academic learning and real-world projects. My educational journey has
+                    provided me with a strong foundation in programming, software development, and problem-solving,
+                    enabling me to build efficient and scalable web solutions.
+
+                </p>
+            </div><!--end grid-->
+
+            <div class="grid grid-cols-1 mt-8 relative w-full academic-slide-container">
+                <!-- <div class="academic-slide"> -->
+                <div
+                    class="relative after:content-[''] after:absolute after:top-0 ltr:md:after:right-0 ltr:md:after:left-0 rtl:md:after:left-0 rtl:md:after:right-0 after:w-px after:h-full md:after:m-auto after:border-s-2 after:border-dashed after:border-gray-200 dark:after:border-gray-700 ms-3 md:ms-0 academic-slide">
+                    <!--Start content-->
+                    <div
+                        class="ms-8 md:ms-0 relative after:content-[''] after:absolute after:top-[9px] after:rounded-full after:z-10 after:w-2.5 after:h-2.5 after:bg-amber-500 md:after:mx-auto ltr:md:after:right-0 ltr:md:after:left-0 rtl:md:after:left-0 rtl:md:after:right-0 ltr:after:-left-9 rtl:after:-right-9 before:content-[''] before:absolute md:before:mx-auto ltr:md:before:right-0 ltr:md:before:left-0 ltr:before:-left-11 rtl:md:before:left-0 rtl:md:before:right-0 rtl:before:-right-11 before:rounded-full before:z-10 before:border-2 before:border-dashed before:border-gray-700 before:top-0 before:w-7 before:h-7 before:bg-white ">
+                        <div class="grid md:grid-cols-2">
+                            <div class="md:text-end md:me-8 relative">
+                                <!-- <img src="assets/images/logos/facebook-logo-2019.png" class="rounded-full h-9 w-9 md:ms-auto" alt=""> -->
+                                <h5 class="my-2 font-semibold text-lg">MCA</h5>
+                                <h6 class="text-sm mb-0">2023-Present</h6>
+                            </div>
+
+                            <div class="ltr:float-left rtl:float-right text-start md:ms-8 mt-6 md:mt-0">
+                                <h5 class="title mb-1 font-semibold">Greater Noida Institue of Technologies</h5>
+                                <p class="mt-3 mb-0 text-slate-400 text-[15px]">Currently pursuing my MCA, where I
+                                    am
+                                    gaining in-depth knowledge of software development, full-stack web technologies,
+                                    and
+                                    database management. My coursework and hands-on projects help me build scalable
+                                    applications, solve complex problems, and stay updated with emerging
+                                    technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End content-->
+
+                    <!--Start content-->
+                    <div
+                        class="mt-12 ms-8 md:ms-0 relative after:content-[''] after:absolute after:top-[9px] after:rounded-full after:z-10 after:w-2.5 after:h-2.5 after:bg-amber-500 md:after:mx-auto ltr:md:after:right-0 ltr:md:after:left-0 ltr:after:-left-9 rtl:md:after:left-0 rtl:md:after:right-0 rtl:after:-right-9 before:content-[''] before:absolute md:before:mx-auto ltr:md:before:right-0 ltr:md:before:left-0 ltr:before:-left-11 rtl:md:before:left-0 rtl:md:before:right-0 rtl:before:-right-11 before:rounded-full before:z-10 before:border-2 before:border-dashed before:border-gray-700 before:top-0 before:w-7 before:h-7 before:bg-white ">
+                        <div class="grid md:grid-cols-2">
+                            <div class="text-start md:ms-8 relative md:order-2">
+                                <!-- <img src="assets/images/logos/google-logo.png" class="rounded-full h-9 w-9 md:me-auto" alt=""> -->
+                                <h5 class="my-2 font-semibold text-lg">BCA</h5>
+                                <h6 class="text-sm mb-0">2020-23</h6>
+                            </div>
+
+                            <div class="ltr:float-left rtl:float-right md:text-end md:me-8 mt-6 md:mt-0 md:order-1">
+                                <h5 class="title mb-1 font-semibold">Milestone Institue of Professional Studies</h5>
+                                <p class="mt-3 mb-0 text-slate-400 text-[15px]">Completed my BCA, where I developed
+                                    a
+                                    strong foundation in programming, software development, and database management.
+                                    This academic journey introduced me to the world of web development, algorithms,
+                                    and
+                                    problem-solving, shaping my path toward becoming a full-stack developer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End content-->
+
+                    <!--Start content-->
+                    <div
+                        class="mt-12 ms-8 md:ms-0 relative after:content-[''] after:absolute after:top-[9px] after:rounded-full after:z-10 after:w-2.5 after:h-2.5 after:bg-amber-500 md:after:mx-auto ltr:md:after:right-0 ltr:md:after:left-0 ltr:after:-left-9 rtl:md:after:left-0 rtl:md:after:right-0 rtl:after:-right-9 before:content-[''] before:absolute md:before:mx-auto ltr:md:before:right-0 ltr:md:before:left-0 ltr:before:-left-11 rtl:md:before:left-0 rtl:md:before:right-0 rtl:before:-right-11 before:rounded-full before:z-10 before:border-2 before:border-dashed before:border-gray-700 before:top-0 before:w-7 before:h-7 before:bg-white ">
+                        <div class="grid md:grid-cols-2">
+                            <div class="md:text-end md:me-8 relative">
+                                <!-- <img src="assets/images/logos/lenovo-logo.png" class="rounded-full h-9 w-9 md:ms-auto" alt=""> -->
+                                <h5 class="my-2 font-semibold text-lg">Intermediate</h5>
+                                <h6 class="text-sm mb-0">2017-18</h6>
+                            </div>
+
+                            <div class="ltr:float-left rtl:float-right text-start md:ms-8 mt-6 md:mt-0">
+                                <h5 class="title mb-1 font-semibold">K R Inter College chirori ghaziabad</h5>
+                                <p class="mt-3 mb-0 text-slate-400 text-[15px]">Completed my 12th grade with a focus
+                                    on
+                                    Physics, Chemistry, and Mathematics (PCM). This academic phase enhanced my
+                                    logical
+                                    reasoning, problem-solving abilities, and analytical skills, which later played
+                                    a
+                                    key role in my journey toward software development and full-stack programming.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End content-->
+
+                    <!--Start content-->
+                    <div
+                        class="mt-12 ms-8 md:ms-0 relative after:content-[''] after:absolute after:top-[9px] after:rounded-full after:z-10 after:w-2.5 after:h-2.5 after:bg-amber-500 md:after:mx-auto ltr:md:after:right-0 ltr:md:after:left-0 ltr:after:-left-9 rtl:md:after:left-0 rtl:md:after:right-0 rtl:after:-right-9 before:content-[''] before:absolute md:before:mx-auto ltr:md:before:right-0 ltr:md:before:left-0 ltr:before:-left-11 rtl:md:before:left-0 rtl:md:before:right-0 rtl:before:-right-11 before:rounded-full before:z-10 before:border-2 before:border-dashed before:border-gray-700 before:top-0 before:w-7 before:h-7 before:bg-white ">
+                        <div class="grid md:grid-cols-2">
+                            <div class="text-start md:ms-8 relative md:order-2">
+                                <!-- <img src="assets/images/logos/circle-logo.png" class="rounded-full h-9 w-9 md:me-auto" alt=""> -->
+                                <h5 class="my-2 font-semibold text-lg">High School</h5>
+                                <h6 class="text-sm mb-0">2015-16</h6>
+                            </div>
+
+                            <div class="ltr:float-left rtl:float-right md:text-end md:me-8 mt-6 md:mt-0 md:order-1">
+                                <h5 class="title mb-1 font-semibold">B H S S school</h5>
+                                <p class="mt-3 mb-0 text-slate-400 text-[15px]">Completed my 10th grade, where I
+                                    built a
+                                    strong foundation in mathematics, science, and logical reasoning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End content-->
+                </div>
+                <!-- </div> -->
+
+                <!-- academic-slide -->
+                <div
+                    class="relative after:content-[''] after:absolute after:top-0 ltr:md:after:right-0 ltr:md:after:left-0 rtl:md:after:left-0 rtl:md:after:right-0 after:w-px after:h-full md:after:m-auto after:border-s-2 after:border-dashed after:border-gray-200 dark:after:border-gray-700 ms-3 md:ms-0 academic-slide">
+                    <!--Start content-->
+                    <div
+                        class="ms-8 md:ms-0 relative after:content-[''] after:absolute after:top-[9px] after:rounded-full after:z-10 after:w-2.5 after:h-2.5 after:bg-amber-500 md:after:mx-auto ltr:md:after:right-0 ltr:md:after:left-0 rtl:md:after:left-0 rtl:md:after:right-0 ltr:after:-left-9 rtl:after:-right-9 before:content-[''] before:absolute md:before:mx-auto ltr:md:before:right-0 ltr:md:before:left-0 ltr:before:-left-11 rtl:md:before:left-0 rtl:md:before:right-0 rtl:before:-right-11 before:rounded-full before:z-10 before:border-2 before:border-dashed before:border-gray-700 before:top-0 before:w-7 before:h-7 before:bg-white ">
+                        <div class="grid md:grid-cols-2">
+                            <div class="md:text-end md:me-8 relative">
+                                <!-- <img src="assets/images/logos/facebook-logo-2019.png" class="rounded-full h-9 w-9 md:ms-auto" alt=""> -->
+                                <h5 class="my-2 font-semibold text-lg"><strong>Certificate in</strong> C &amp; C++
+                                    Programming</h5>
+                                <h6 class="text-sm mb-0">Aug 2024</h6>
+                            </div>
+
+                            <div class="ltr:float-left rtl:float-right text-start md:ms-8 mt-6 md:mt-0">
+                                <h5 class="title mb-1 font-semibold">Issued By:</strong> E & ICT Academy, IIT Kanpur
+                                </h5>
+                                <p class="mt-3 mb-0 text-slate-400 text-[15px]"> I have successfully completed the
+                                    Student Development Program on C and C++ Programming, offered by the E & ICT
+                                    Academy, IIT Kanpur. The program helped me enhance my proficiency in both C and C++
+                                    programming languages through practical exercises, theoretical sessions, and
+                                    hands-on projects. It was an excellent opportunity to strengthen my foundational
+                                    skills in programming, which are critical for building efficient software solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End content-->
+
+                    <!--Start content-->
+                    <div
+                        class="mt-12 ms-8 md:ms-0 relative after:content-[''] after:absolute after:top-[9px] after:rounded-full after:z-10 after:w-2.5 after:h-2.5 after:bg-amber-500 md:after:mx-auto ltr:md:after:right-0 ltr:md:after:left-0 ltr:after:-left-9 rtl:md:after:left-0 rtl:md:after:right-0 rtl:after:-right-9 before:content-[''] before:absolute md:before:mx-auto ltr:md:before:right-0 ltr:md:before:left-0 ltr:before:-left-11 rtl:md:before:left-0 rtl:md:before:right-0 rtl:before:-right-11 before:rounded-full before:z-10 before:border-2 before:border-dashed before:border-gray-700 before:top-0 before:w-7 before:h-7 before:bg-white ">
+                        <div class="grid md:grid-cols-2">
+                            <div class="text-start md:ms-8 relative md:order-2">
+                                <!-- <img src="assets/images/logos/google-logo.png" class="rounded-full h-9 w-9 md:me-auto" alt=""> -->
+                                <h5 class="my-2 font-semibold text-lg"><strong>Event:</strong> College Coding
+                                    Competition</h5>
+                                <h6 class="text-sm mb-0">Jan 2024</h6>
+                            </div>
+
+                            <div class="ltr:float-left rtl:float-right md:text-end md:me-8 mt-6 md:mt-0 md:order-1">
+                                <h5 class="title mb-1 font-semibold">Award:</strong> 2nd Place </h5>
+                                <p class="mt-3 mb-0 text-slate-400 text-[15px]">I secured 2nd place in the College
+                                    Coding Competition held in 2024. This event tested my skills in problem-solving,
+                                    algorithmic thinking, and coding efficiency. My solutions were evaluated based on
+                                    correctness, optimization, and I was recognized for my strong performance.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End content-->
+
+                    <!--Start content-->
+                    <div
+                        class="mt-12 ms-8 md:ms-0 relative after:content-[''] after:absolute after:top-[9px] after:rounded-full after:z-10 after:w-2.5 after:h-2.5 after:bg-amber-500 md:after:mx-auto ltr:md:after:right-0 ltr:md:after:left-0 ltr:after:-left-9 rtl:md:after:left-0 rtl:md:after:right-0 rtl:after:-right-9 before:content-[''] before:absolute md:before:mx-auto ltr:md:before:right-0 ltr:md:before:left-0 ltr:before:-left-11 rtl:md:before:left-0 rtl:md:before:right-0 rtl:before:-right-11 before:rounded-full before:z-10 before:border-2 before:border-dashed before:border-gray-700 before:top-0 before:w-7 before:h-7 before:bg-white ">
+                        <div class="grid md:grid-cols-2">
+                            <div class="md:text-end md:me-8 relative">
+                                <!-- <img src="assets/images/logos/lenovo-logo.png" class="rounded-full h-9 w-9 md:ms-auto" alt=""> -->
+                                <h5 class="my-2 font-semibold text-lg">Certificate of Completion - Advanced Java
+                                    Programe</h5>
+                                <h6 class="text-sm mb-0">2024</h6>
+                            </div>
+
+                            <div class="ltr:float-left rtl:float-right text-start md:ms-8 mt-6 md:mt-0">
+                                <h5 class="title mb-1 font-semibold"><strong>Issued By:</strong> Anudip Foundation</h5>
+                                <p class="mt-3 mb-0 text-slate-400 text-[15px]">Successfully completed an Advanced Java
+                                    Programming course conducted by Anudip Foundation. This program focused on in-depth
+                                    Java concepts such as Object-Oriented Programming (OOP), JDBC, Servlets, JSP, and
+                                    Spring Framework. The training emphasized hands-on coding, real-world project
+                                    implementation, and industry best practices, strengthening my backend development
+                                    skills.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End content-->
+
+                    <!--Start content-->
+                    <div
+                        class="mt-12 ms-8 md:ms-0 relative after:content-[''] after:absolute after:top-[9px] after:rounded-full after:z-10 after:w-2.5 after:h-2.5 after:bg-amber-500 md:after:mx-auto ltr:md:after:right-0 ltr:md:after:left-0 ltr:after:-left-9 rtl:md:after:left-0 rtl:md:after:right-0 rtl:after:-right-9 before:content-[''] before:absolute md:before:mx-auto ltr:md:before:right-0 ltr:md:before:left-0 ltr:before:-left-11 rtl:md:before:left-0 rtl:md:before:right-0 rtl:before:-right-11 before:rounded-full before:z-10 before:border-2 before:border-dashed before:border-gray-700 before:top-0 before:w-7 before:h-7 before:bg-white ">
+                        <div class="grid md:grid-cols-2">
+                            <div class="text-start md:ms-8 relative md:order-2">
+                                <!-- <img src="assets/images/logos/circle-logo.png" class="rounded-full h-9 w-9 md:me-auto" alt=""> -->
+                                <h5 class="my-2 font-semibold text-lg">Certificate of Completion- Advent of Cyber 2022 &
+                                    2023</h5>
+                                <h6 class="text-sm mb-0">2022 &amp; 23</h6>
+                            </div>
+
+                            <div class="ltr:float-left rtl:float-right md:text-end md:me-8 mt-6 md:mt-0 md:order-1">
+                                <h5 class="title mb-1 font-semibold"><strong>Issued by:</strong> TryHackMe</h5>
+                                <p class="mt-3 mb-0 text-slate-400 text-[15px]">This certificate acknowledges that
+                                    Dharmander has completed 24 Cyber Security challenges as part of the Advent of Cyber
+                                    event hosted by TryHackMe in both 2022 and 2023. The challenge completion in both
+                                    years demonstrates a proven understanding of cyber security fundamentals, as well as
+                                    consistency, tenacity, and continuous learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End content-->
+                    <!-- </div> -->
+
+                </div><!--end grid-->
+
+                <!-- Slider Navigation -->
+                <div class="flex justify-center mt-16 space-x-2">
+                    <button class="w-3 h-3 bg-orange-500 rounded-full academic-slider-dot" data-slide="0"></button>
+                    <button class="w-3 h-3 bg-gray-200 rounded-full academic-slider-dot" data-slide="1"></button>
+                </div>
+            </div>
+        </div><!--end container-->
+    </section>
+
+    <!-- project and work  -->
+    <section class="relative md:py-24 py-16 bg-dark-2 text-white" id="project">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">My Work &amp;
+                    Projects</h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto text-[15px]"> collection of my best work in web design and
+                    development, built with creativity, precision, and a passion for problem-solving</p>
+            </div><!--end grid-->
+
+            <div class=" text-white grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">
+                <!-- food ordering -->
+                <div class="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+                    <img class="bg-cover w-full h-full" src="img/food.jpeg" alt="food ordeirng system">
+                    <div
+                        class="absolute inset-0 opacity-100 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500">
+                    </div>
+                    <div
+                        class="absolute bottom-0 lg:opacity-0 lg:group-hover:opacity-100 m-6 transition-all duration-500">
+                        <a href=""
+                            class="text-white hover:text-amber-500 font-semibold transition-all duration-500">Food
+                            Ordering System</a>
+                        <span class="block text-sm text-slate-400">Hibernate | MySQL | JAVA| Maven</span>
+                    </div>
+
+                    <div
+                        class="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                        <a href="img/2.png"
+                            class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"><i
+                                class="fab fa-github text-black text-3xl hover:text-gray-700"></i>
+                        </a>
+                    </div>
+                </div><!--end content-->
+
+                <!-- todo  -->
+                <div class="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+                    <img class="bg-cover w-full h-full" src="img/todo.png" alt="">
+                    <div
+                        class="absolute inset-0 opacity-100 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500">
+                    </div>
+                    <div
+                        class="absolute bottom-0 lg:opacity-0 lg:group-hover:opacity-100 m-6 transition-all duration-500">
+                        <a href=""
+                            class="text-white hover:text-amber-500 font-semibold transition-all duration-500">TO-DO
+                            Application</a>
+                        <span class="block text-sm text-slate-400">Hibernate | MySQL | JAVA| Maven | JSP |
+                            Servlet</span>
+                    </div>
+
+                    <div
+                        class="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                        <a href="img/2.png"
+                            class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"><i
+                                class="fab fa-github text-black text-3xl hover:text-gray-700"></i>
+                        </a>
+                    </div>
+                </div><!--end content-->
+
+                <!-- portfolio -->
+                <div class="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+                    <img class="bg-cover w-full h-full" src="img/portfolio.jpeg" alt="">
+                    <div
+                        class="absolute inset-0 opacity-100 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500">
+                    </div>
+                    <div
+                        class="absolute bottom-0 lg:opacity-0 lg:group-hover:opacity-100 m-6 transition-all duration-500">
+                        <a href=""
+                            class="text-white hover:text-amber-500 font-semibold transition-all duration-500">PORTFOLIO</a>
+                        <span class="block text-sm text-slate-400">HTML | CSS | JS | Tailwind CSS</span>
+                    </div>
+
+                    <div
+                        class="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                        <a href="img/2.png"
+                            class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"><i
+                                class="fab fa-github text-black text-3xl hover:text-gray-700"></i>
+                        </a>
+                    </div>
+                </div><!--end content-->
+
+                <!-- blog gen ai -->
+                <div class="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+                    <img class="bg-cover w-full h-full" src="img/gen-ai.jpeg" alt="">
+                    <div
+                        class="absolute inset-0 opacity-100 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500">
+                    </div>
+                    <div
+                        class="absolute bottom-0 lg:opacity-0 lg:group-hover:opacity-100 m-6 transition-all duration-500">
+                        <a href=""
+                            class="text-white hover:text-amber-500 font-semibold transition-all duration-500">BLOG-GEN-AI</a>
+                        <span class="block text-sm text-slate-400">NextJs | GoogleAPIs | Tailwind CSS</span>
+                    </div>
+
+                    <div
+                        class="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                        <a href="img/2.png"
+                            class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"><i
+                                class="fab fa-github text-black text-3xl hover:text-gray-700"></i>
+                        </a>
+                    </div>
+                </div><!--end content-->
+
+                <!-- weather web app  -->
+                <div class="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+                    <img class="bg-cover w-full h-full" src="img/weather.jpeg" alt="">
+                    <div
+                        class="absolute inset-0 opacity-100 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500">
+                    </div>
+                    <div
+                        class="absolute bottom-0 lg:opacity-0 lg:group-hover:opacity-100 m-6 transition-all duration-500">
+                        <a href=""
+                            class="text-white hover:text-amber-500 font-semibold transition-all duration-500">WEATHER
+                            WEB APP</a>
+                        <span class="block text-sm text-slate-400">HTML | CSS | JS | WEATHER APIs</span>
+                    </div>
+
+                    <div
+                        class="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                        <a href="img/2.png"
+                            class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"><i
+                                class="fab fa-github text-black text-3xl hover:text-gray-700"></i>
+                        </a>
+                    </div>
+                </div><!--end content-->
+
+                <!-- auth system  -->
+                <div class="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+                    <img class="bg-cover w-full h-full" src="img/auth.jpeg" alt="">
+                    <div
+                        class="absolute inset-0 opacity-100 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500">
+                    </div>
+                    <div
+                        class="absolute bottom-0 lg:opacity-0 lg:group-hover:opacity-100 m-6 transition-all duration-500">
+                        <a href=""
+                            class="text-white hover:text-amber-500 font-semibold transition-all duration-500">AUTH
+                            SYSTEM</a>
+                        <span class="block text-sm text-slate-400">Hibernate | MySQL | JAVA| Maven | JSP | Servlet
+                        </span>
+                    </div>
+
+                    <div
+                        class="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                        <a href="assets/images/works/6.jpg"
+                            class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"><i
+                                class="fab fa-github text-black text-3xl hover:text-gray-700"></i>
+                        </a>
+                    </div>
+                </div><!--end content-->
+
+                <!-- temprature-converter  -->
+                <div class="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+                    <img class="bg-cover w-full h-full" class="bg-cover w-full" src="img/temp.png" alt="">
+                    <div
+                        class="absolute inset-0 opacity-100 lg:opacity-0 group-hover:opacity-100  bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500">
+                    </div>
+                    <div
+                        class="absolute bottom-0 lg:opacity-0 lg:group-hover:opacity-100 m-6 transition-all duration-500">
+                        <a href=""
+                            class="text-white hover:text-amber-500 font-semibold transition-all duration-500 uppercase">Temprature
+                            Converter
+                        </a>
+                        <span class="block text-sm text-slate-400">HTML | CSS | JS</span>
+                    </div>
+
+                    <div
+                        class="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                        <a href="assets/images/works/7.jpg"
+                            class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"><i
+                                class="fab fa-github text-black text-3xl hover:text-gray-700"></i>
+                        </a>
+                    </div>
+                </div><!--end content-->
+
+                <!-- quiz  -->
+                <div class="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+                    <img class="bg-cover w-full h-full" class="bg-cover w-full" src="img/quiz.png" alt="">
+                    <div
+                        class="absolute inset-0 opacity-100 lg:opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500">
+                    </div>
+                    <div
+                        class="absolute bottom-0 lg:opacity-0 lg:group-hover:opacity-100 m-6 transition-all duration-500">
+                        <a href=""
+                            class="text-white hover:text-amber-500 font-semibold transition-all duration-500">QUIZZY
+                            MIND</a>
+                        <span class="block text-sm text-slate-400">HTML | CSS | JS</span>
+                    </div>
+
+                    <div
+                        class="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                        <a href="assets/images/works/8.jpg"
+                            class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"><i
+                                class="fab fa-github text-black text-3xl hover:text-gray-700"></i>
+                        </a>
+                    </div>
+                </div><!--end content-->
+            </div><!--end grid-->
+        </div><!--end container-->
+    </section>
+
+    <!-- friends review or testimoninal -->
+    <section class="relative md:py-24 py-16 bg-dark-3" id="testi">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 pb-18 text-center">
+                <h3 class="mb-6 md:text-2xl text-white text-xl md:leading-normal leading-normal font-semibold">
+                    Testimonials</h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Honest feedback about my skills, dedication, and
+                    approach to development.</p>
+            </div><!--end grid-->
+
+            <div class="relative w-full max-w-3xl mx-auto">
+                <!-- Testimonial Slider Container -->
+                <div id="testimonial-slider"
+                    class="relative overflow-hidden bg-gray-500 pt-3  px-3 shadow-lg rounded-xl text-center ">
+                    <!-- Quotation Marks -->
+                    <!-- <i class="mdi mdi-format-quote-open text-5xl text-gray-300 absolute top-0 left-0"></i> -->
+                    <div class="testimonial-slide p-6  text-center relative">
+
+
+                        <!-- Testimonial Content -->
+                        <p class="text-gray-100 text-lg italic">
+                            "Dharmander is always the go-to person whenever we need help with coding. His
+                            problem-solving skills and patience make working with him an absolute pleasure."
+                        </p>
+
+
+                        <!-- Author Details -->
+                        <div class="mt-4">
+                            <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads01&accessoriesType=Blank&hairColor=Black&facialHairType=BeardMajestic&facialHairColor=Black&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=AngryNatural&mouthType=Smile&skinColor=Light"
+                                class="h-14 w-14 rounded-full shadow-md mx-auto mb-2" alt="">
+                            <h4 class="text-lg font-semibold">Himanshu</h4>
+                            <span class=" text-sm">Web Developer</span>
+                        </div>
+                        <!-- Quotation Marks -->
+                        <!-- <i class="mdi mdi-format-quote-close text-5xl text-gray-300 absolute bottom-0 right-0"></i> -->
+                    </div>
+
+                    <div class="testimonial-slide p-6  text-center relative hidden">
+                        <!-- <i class="mdi mdi-format-quote-open text-5xl text-gray-300 absolute top-0 left-0"></i> -->
+                        <p class="text-gray-100 text-lg italic">
+                            "Working with Dharmander has always been a great experience. His logical approach and
+                            attention to detail make him a fantastic developer."
+                        </p>
+                        <!-- <i class="mdi mdi-format-quote-close text-5xl text-gray-300 absolute bottom-0 right-0"></i> -->
+                        <div class="mt-4">
+                            <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Sunglasses&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=BlazerSweater&clotheColor=PastelOrange&eyeType=EyeRoll&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light"
+                                class="h-14 w-14 rounded-full shadow-md mx-auto mb-2" alt="">
+                            <h4 class="text-lg font-semibold">Deepak chauhan</h4>
+                            <span class=" text-sm">Software Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide p-6  text-center relative hidden">
+                        <!-- <i class="mdi mdi-format-quote-open text-5xl text-gray-300 absolute top-0 left-0"></i> -->
+                        <p class="text-gray-100 text-lg italic">
+                            "I've learned so much from Dharmander. His ability to break down complex concepts into
+                            simple terms is incredible. He's a great mentor!"
+                        </p>
+                        <!-- <i class="mdi mdi-format-quote-close text-5xl text-gray-300 absolute bottom-0 right-0"></i> -->
+                        <div class="mt-4">
+                            <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads01&accessoriesType=Blank&hairColor=Black&facialHairType=BeardMajestic&facialHairColor=Black&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=AngryNatural&mouthType=Smile&skinColor=Light"
+                                class="h-14 w-14 rounded-full shadow-md mx-auto mb-2" alt="">
+                            <h4 class="text-lg font-semibold">Yash Gujjar</h4>
+                            <span class=" text-sm">UI/UX Designer</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide p-6  text-center relative hidden">
+                        <!-- <i class="mdi mdi-format-quote-open text-5xl text-gray-300 absolute top-0 left-0"></i> -->
+                        <p class="text-gray-100 text-lg italic">
+                            "An amazing problem solver! Always ready to tackle complex issues and build high-quality web
+                            applications. Truly passionate about coding!"
+                        </p>
+                        <!-- <i class="mdi mdi-format-quote-close text-5xl text-gray-300 absolute bottom-0 right-0"></i> -->
+                        <div class="mt-4">
+                            <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairCurvy&accessoriesType=Sunglasses&hairColor=Black&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Happy&eyebrowType=FlatNatural&mouthType=Smile&skinColor=Light"
+                                class="h-14 w-14 rounded-full shadow-md mx-auto mb-2" alt="">
+                            <h4 class="text-lg font-semibold">Monika yadav</h4>
+                            <span class=" text-sm">UI/UX Designer</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide p-6  text-center relative hidden">
+                        <!-- <i class="mdi mdi-format-quote-open text-5xl text-gray-300 absolute top-0 left-0"></i> -->
+                        <p class="text-gray-100 text-lg italic">
+                            Working with Dharmander has always been smooth—he's reliable, detail-oriented, and makes
+                            collaboration effortless.
+                        </p>
+                        <!-- <i class=" text-5xl text-gray-300 absolute bottom-0 right-0"></i> -->
+                        <div class="mt-4">
+                            <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairCurvy&accessoriesType=Sunglasses&hairColor=Black&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Happy&eyebrowType=FlatNatural&mouthType=Smile&skinColor=Light"
+                                class="h-14 w-14 rounded-full shadow-md mx-auto mb-2" alt="">
+                            <h4 class="text-lg font-semibold">Bhumika Sablok</h4>
+                            <span class=" text-sm">Software Developer</span>
+                        </div>
+                    </div>
+
+                    <!-- <i class="mdi mdi-format-quote-close text-5xl text-gray-300 absolute bottom-0 right-0"></i> -->
+
+
+                </div>
+
+                <!-- Slider Navigation -->
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="w-3 h-3 bg-orange-500 rounded-full slider-dot" data-slide="0"></button>
+                    <button class="w-3 h-3 bg-gray-200 rounded-full slider-dot" data-slide="1"></button>
+                    <button class="w-3 h-3 bg-gray-200 rounded-full slider-dot" data-slide="2"></button>
+                    <button class="w-3 h-3 bg-gray-200 rounded-full slider-dot" data-slide="3"></button>
+                    <button class="w-3 h-3 bg-gray-200 rounded-full slider-dot" data-slide="4"></button>
+                </div>
+            </div>
+
+            <!--end grid-->
+        </div><!--end container-->
+    </section>
+
+    <!-- blogs -->
+    <section class="relative md:py-24 py-16 bg-dark-2 " id="blog">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Blogs: Insights &
+                    Innovations</h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Exploring the world of full-stack development,
+                    problem-solving, and emerging technologies—sharing knowledge to enhance digital experiences.</p>
+            </div><!--end grid-->
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px] mt-8">
+                <div class="blog relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
+                    <img src="assets/images/blog/01_giglink.jpg" alt="">
+
+                    <div class="content p-6">
+                        <a href=""
+                            class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">How
+                            to Connect Java Applications with MySQL Using Hibernate</a>
+                        <p class="text-slate-400 mt-3 text-[15px]"> A beginner-friendly guide on setting up Hibernate,
+                            configuring it with MySQL, and performing basic CRUD operations.</p>
+
+                        <div class="mt-5">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Comming
+                                Soon... <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
+                    <img src="assets/images/blog/01_techwind.jpg" alt="">
+
+                    <div class="content p-6">
+                        <a href=""
+                            class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Building
+                            a Console-Based Food Ordering System in Java</a>
+                        <p class="text-slate-400 mt-3 text-[15px]">A step-by-step guide on how to create a simple food
+                            ordering system using Java, Hibernate, Maven, and MySQL.</p>
+
+                        <div class="mt-5">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Comming
+                                Soon... <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog relative rounded-lg shadow shadow-slate-200 dark:shadow-gray-800 overflow-hidden">
+                    <img src="assets/images/blog/01_upwind.jpg" alt="">
+
+                    <div class="content p-6">
+                        <a href=""
+                            class="text-[17px] hover:text-amber-500 dark:text-white dark:hover:text-amber-500 transition duration-500 ease-in-out font-medium h5">Essential
+                            Git Commands Every Developer Should Know</a>
+                        <p class="text-slate-400 mt-3 text-[15px]"> A simple guide covering the most important Git
+                            commands like git init, git clone, git commit, git push, git pull, and how to resolve basic
+                            merge conflicts.</p>
+
+                        <div class="mt-5">
+                            <a href=""
+                                class="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Comming
+                                Soon... <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end grid-->
+        </div><!--end container-->
+    </section>
+
+    <!-- contact  -->
+    <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800 bg-dark-3 text-white active" id="contact">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h3 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">Get In Touch !</h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto text-[15px]">Feel free to reach out! Whether you have a project in mind, need collaboration, or just want to say hi, I'd love to hear from you.</p>
+            </div><!--end grid-->
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-[30px]">
+                <div class="lg:col-span-8">
+                    <div class="p-6 rounded-md shadow bg-white dark:bg-slate-900 bg-dark-2">
+                        <!-- CONTACT FORM onsubmit="return validateForm() -->
+                        <form name="myForm" id="myForm">
+                            <p class="mb-0" id="error-msg"></p>
+                            <div id="simple-msg"></div>
+                            <div class="grid lg:grid-cols-12 lg:gap-5">
+                                <div class="lg:col-span-6 mb-5">
+                                    <input name="name" id="name" type="text"
+                                        class="form-input w-full py-2 px-3 border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded h-10 outline-none bg-transparent focus:border-amber-500/50 dark:focus:border-amber-500/50 focus:shadow-none focus:ring-0 text-[15px]"
+                                        placeholder="Name :">
+                                </div>
+
+                                <div class="lg:col-span-6 mb-5">
+                                    <input name="email" id="email" type="email"
+                                        class="form-input w-full py-2 px-3 border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded h-10 outline-none bg-transparent focus:border-amber-500/50 dark:focus:border-amber-500/50 focus:shadow-none focus:ring-0 text-[15px]"
+                                        placeholder="Email :">
+                                </div><!--end col-->
+                            </div>
+
+                            <div class="grid grid-cols-1">
+                                <div class="mb-5">
+                                    <input name="subject" id="subject"
+                                        class="form-input w-full py-2 px-3 border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded h-10 outline-none bg-transparent focus:border-amber-500/50 dark:focus:border-amber-500/50 focus:shadow-none focus:ring-0 text-[15px]"
+                                        placeholder="Subject :">
+                                </div>
+
+                                <div class="mb-5">
+                                    <textarea name="message" id="message"
+                                        class="form-input w-full py-2 px-3 border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded h-28 outline-none bg-transparent focus:border-amber-500/50 dark:focus:border-amber-500/50 focus:shadow-none focus:ring-0 text-[15px] resize-none"
+                                        placeholder="Message :"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit" name="send"
+                                class="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md h-11 justify-center flex items-center">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4">
+                    <div class="lg:ms-8">
+                        <div class="flex">
+                            <div class="icons text-center mx-auto">
+                                <i class="uil uil-phone block rounded text-2xl dark:text-white mb-0"></i>
+                            </div>
+
+                            <div class="flex-1 ms-6">
+                                <h5 class="text-[17px] dark:text-white mb-2 font-medium">Phone</h5>
+                                <a href="tel:+152534-468-854" class="text-slate-400 text-[15px]">+91 9310266755</a>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4">
+                            <div class="icons text-center mx-auto">
+                                <i class="uil uil-envelope block rounded text-2xl dark:text-white mb-0"></i>
+                            </div>
+
+                            <div class="flex-1 ms-6">
+                                <h5 class="text-[17px] dark:text-white mb-2 font-medium">Email</h5>
+                                <a href="mailto:contact@example.com"
+                                    class="text-slate-400 text-[15px]">dharmander832@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex mt-4">
+                            <div class="icons text-center mx-auto">
+                                <i class="uil uil-map-marker block rounded text-2xl dark:text-white mb-0"></i>
+                            </div>
+
+                            <div class="flex-1 ms-6">
+                                <h5 class="text-[17px] dark:text-white mb-2 font-medium">Location</h5>
+                                <p class="text-slate-400 text-[15px] mb-2">Greater Noida - near Knowledge Park - III</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end grid-->
+        </div><!--end container-->
+    </section>
+
+
+    <footer class="footer bg-dark-footer relative text-white bg-dark-2 dark:text-gray-200">
+        <div class="py-[30px] px-0 border-t border-slate-800 ">
+            <div class="container mx-auto text-center">
+                <div class="grid lg:grid-cols-12 md:grid-cols-3 grid-cols-1 items-center">
+                    <div class="lg:col-span-3 md:text-start text-center">
+                        <a href="#" class="text-[22px] focus:outline-none">
+                            <img src="assets/images/logo-light.png" class="mx-auto md:me-auto md:ms-0" alt="">
+                        </a>
+                    </div>
+
+                    <div class="lg:col-span-5 text-center mt-6 md:mt-0">
+                        <p class="mb-0">©
+                            <script>document.write(new Date().getFullYear())</script> Design with <i
+                                class="fas fa-heart text-red-500 text-lg px-1 hover:text-red-700"></i>
+                            by <a href="https:/dharmander/" target="_blank" class="text-reset">Dharmander</a>.
+                        </p>
+                    </div>
+                    <ul class="lg:col-span-4 list-none md:text-end text-white text-center mt-6 md:mt-0 items-center ">
+                        <!-- Instagram -->
+                        <li class="inline mx-1 text-center">
+                            <a href="https://www.instagram.com/imdharmanderyadav/" target="_blank"
+                                class="border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500 p-2">
+                                <i class="fab fa-instagram text-2xl " title="Instagram"></i>
+                            </a>
+                        </li>
+                        <!-- Twitter -->
+                        <li class="inline mx-1 text-center">
+                            <a href="https://twitter.com/imdharmander" target="_blank"
+                                class="border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500 p-2">
+                                <i class="fab fa-twitter text-2xl" title="Twitter"></i>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+                        <li class="inline mx-1 text-center">
+                            <a href="https://www.linkedin.com/in/dharmander-yadav-591408251" target="_blank"
+                                class="border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500 p-2">
+                                <i class="fab fa-linkedin text-2xl" title="LinkedIn"></i>
+                            </a>
+                        </li>
+                        <!-- BuyMeACoffee -->
+                        <li class="inline mx-1 text-center">
+                            <a href="https://buymeacoffee.com/dharmanderd" target="_blank"
+                                class="border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500 p-2">
+                                <i class="fas fa-coffee text-2xl" title="BuyMeACoffee"></i>
+                            </a>
+                        </li>
+                        <!-- Email -->
+                        <li class="inline mx-1 text-center">
+                            <a href="mailto:dharmander832@gmail.com"
+                                class="border border-gray-800 rounded-md hover:border-amber-500 dark:hover:border-amber-500 hover:bg-amber-500 dark:hover:bg-amber-500 p-2">
+                                <i class="fas fa-envelope text-2xl" title="Email"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <!--end icon-->
+                </div><!--end grid-->
+            </div><!--end container-->
+        </div>
+    </footer>
+
+
+
+
+    <!-- <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script> -->
+    <!-- Tiny Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <!-- emailjs script -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
