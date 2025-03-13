@@ -31,12 +31,14 @@ Welcome to my personal portfolio! This is a responsive and modern portfolio webs
 ```sh
 git clone https://github.com/yourusername/portfolio.git
 cd portfolio
-
+```
 ## 2️⃣ Open in a Browser
-Simply open the ```sh index.html ``` file in a web browser. No additional setup is required.
+Simply open the **index.html** file in a web browser. No additional setup is required.
 
 ## 📬 Contact
-### 📧 **[Email:](dharmander832@gmail.com)**
-### 🔗 **[LinkedIn:] (linkedin.com/in/dharmanderyadav)**
+
+**📧 Email: dharmander832@gmail.com**
+
+🔗 **[LinkedIn:](https://linkedin.com/in/dharmanderyadav)**
 ---
-###⭐ If you like this project, consider giving it a star on GitHub! ⭐
+### ⭐ If you like this project, consider giving it a star on GitHub! ⭐
